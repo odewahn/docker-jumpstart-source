@@ -1,0 +1,44 @@
+{
+  "branch": "master",
+  "files": [
+    "public/introduction.md",
+    "public/boot2docker.md",
+    "public/images.md",
+    "public/containers.md",
+    "public/building-images-with-dockerfiles.md",
+    "public/example.md",
+    "public/dockerhub.md",
+    "public/additional-resources.md"
+  ],
+  "formats": {
+    "pdf": {
+      "version": "web",
+      "index": false,
+      "toc": false,
+      "syntaxhighlighting": false,
+      "show_comments": false
+    },
+    "epub": {
+      "index": false,
+      "toc": false,
+      "epubcheck": false,
+      "syntaxhighlighting": false,
+      "show_comments": false
+    },
+    "mobi": {
+      "index": false,
+      "toc": false,
+      "syntaxhighlighting": false,
+      "show_comments": false
+    },
+    "html": {
+      "index": false,
+      "toc": false,
+      "syntaxhighlighting": false,
+      "show_comments": false,
+      "consolidate": false
+    }
+  },
+  "theme": "oreillymedia/atlas_tech1c_theme",
+  "title": "harp site test"
+}
