@@ -1,80 +1,76 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
-  <head>
+
+<head>
 
     <title><%= title %></title>
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'> </link>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"> </script>
-    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
-    <link href='assets/html.css' rel='stylesheet' type='text/css'> </link>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'></link>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link href='assets/html.css' rel='stylesheet' type='text/css'></link>
 
 
     <script type="text/javascript">
-      $(function() {
-        $("#link-toc").click(function(e) {
-          e.preventDefault();
-          $("#sidebar").toggle();
+        $(function() {
+            $("#link-toc").click(function(e) {
+                e.preventDefault();
+                $("#sidebar").toggle();
+            });
         });
-      });
     </script>
 
 
-  </head>
+</head>
 
-  <body>
-
-
+<body>
 
     <header>
-      <div id="buttons">
-        <a href="#" id="link-toc">☰</a>
-      </div>
+        <div id="buttons">
+            <a href="#" id="link-toc">☰</a>
+        </div>
 
-      <h1><%= title %></h1>
-      </header>
-      <div id="flex-box">
+
+          <table class="social-buttons">
+	     <tr>
+		<td width="80%">
+                   <h1> <%= title %> by <%= author %></h1>
+		</td>
+	        <td>
+                   <a href="https://twitter.com/share" class="twitter-share-button" data-via="odewahn">Tweet</a>
+                   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	         </td>
+	         <td>
+	            <iframe src="http://ghbtns.com/github-btn.html?user=odewahn&repo=docker-jumpstart&type=watch" allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20">&nbsp;</iframe>
+	          </td>
+	     </tr>
+	  </table>
+
+	
+ 
+        <a href="https://github.com/odewahn/docker-jumpstart">
+           <img src="https://s3.amazonaws.com/orm-atlas-media/fork-on-github.png" class="fork-on-github"/>
+        </a>
+
+
+    </header>
+
+    <div id="flex-box">
         <section id="sidebar">
-          {{ toc }}
+            {{ toc }}
         </section>
         <section id="content">
-          <section id="content-body">
-	
-	       <table style="border: none; margin-top: 20px">
-		 <tr>
-		   <td>
-	
-		<a href="https://twitter.com/share" class="twitter-share-button" data-via="odewahn">Tweet</a>
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-		</td>
-		<td>
-		
-             {% if twitter_user %}
+            <section id="content-body">
 
-		<a href="https://twitter.com/{{ twitter_user }}" class="twitter-follow-button" data-show-count="false">Follow</a>
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+                <%- yield %>
 
-	      {% endif %}
-
-                </td>
-
-                <td>
-	           {% if github_user and github_url %}
-	     	      <iframe src="http://ghbtns.com/github-btn.html?user={{ github_user }}&amp;repo={{ github_repo }}&amp;type=watch"
-		         allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20">&nbsp;</iframe>
-	           {% endif %}
-	        </td>
-              </tr>
-            </table>
-
-            <%- yield %>
-
-          </section>
+            </section>
         </section>
-      </div>
+    </div>
 
-<footer>
-   <img class="logo" src="http://orm-logo-service.herokuapp.com/<%= practice_area %>/logo.svg"/>
-</footer>
+    <footer>
+        <img class="logo" src="http://orm-logo-service.herokuapp.com/webops/logo.svg" />
+    </footer>
 
-  </body>
+</body>
+
 </html>
