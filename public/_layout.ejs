@@ -1,11 +1,12 @@
-{{ doctype }}
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
   <head>
-    <meta charset="utf-8" />
-    <title>{{ title }}</title>
+
+    <title><%= title %></title>
+
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'> </link>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"> </script>
     <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+    <link href='assets/html.css' rel='stylesheet' type='text/css'> </link>
 
 
     <script type="text/javascript">
@@ -16,9 +17,11 @@
         });
       });
     </script>
-    {{ header }}
+
+
   </head>
-  <body data-type="book">
+
+  <body>
 
 
 
@@ -26,7 +29,7 @@
       <div id="buttons">
         <a href="#" id="link-toc">☰</a>
       </div>
-      <img class="logo" src="http://orm-logo-service.herokuapp.com/{{ practice-area }}/logo.svg"/>
+
       <h1><%= title %></h1>
       </header>
       <div id="flex-box">
@@ -65,12 +68,13 @@
 
             <%- yield %>
 
-            <ul class="page-navigation">
-              <li>{{ prev_link }}</li>
-              <li>{{ next_link }}</li>
-            </ul>
           </section>
         </section>
       </div>
+
+<footer>
+   <img class="logo" src="http://orm-logo-service.herokuapp.com/<%= practice_area %>/logo.svg"/>
+</footer>
+
   </body>
 </html>

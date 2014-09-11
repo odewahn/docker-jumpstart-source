@@ -5,6 +5,7 @@
       "github_url": "https://github.com/odewahn/docker-jumpstart",
       "github_repo": "docker-jumpstart",
       "twitter_user": "odewahn",
+      "practice_area": "webops",
       "files": [
          "content/coverpage.html",
          "content/toc.md",
