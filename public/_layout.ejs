@@ -1,0 +1,76 @@
+{{ doctype }}
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ title }}</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'> </link>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"> </script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"> </script>
+
+
+    <script type="text/javascript">
+      $(function() {
+        $("#link-toc").click(function(e) {
+          e.preventDefault();
+          $("#sidebar").toggle();
+        });
+      });
+    </script>
+    {{ header }}
+  </head>
+  <body data-type="book">
+
+
+
+    <header>
+      <div id="buttons">
+        <a href="#" id="link-toc">☰</a>
+      </div>
+      <img class="logo" src="http://orm-logo-service.herokuapp.com/{{ practice-area }}/logo.svg"/>
+      <h1><%= title %></h1>
+      </header>
+      <div id="flex-box">
+        <section id="sidebar">
+          {{ toc }}
+        </section>
+        <section id="content">
+          <section id="content-body">
+	
+	       <table style="border: none; margin-top: 20px">
+		 <tr>
+		   <td>
+	
+		<a href="https://twitter.com/share" class="twitter-share-button" data-via="odewahn">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+		</td>
+		<td>
+		
+             {% if twitter_user %}
+
+		<a href="https://twitter.com/{{ twitter_user }}" class="twitter-follow-button" data-show-count="false">Follow</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+	      {% endif %}
+
+                </td>
+
+                <td>
+	           {% if github_user and github_url %}
+	     	      <iframe src="http://ghbtns.com/github-btn.html?user={{ github_user }}&amp;repo={{ github_repo }}&amp;type=watch"
+		         allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20">&nbsp;</iframe>
+	           {% endif %}
+	        </td>
+              </tr>
+            </table>
+
+            <%- yield %>
+
+            <ul class="page-navigation">
+              <li>{{ prev_link }}</li>
+              <li>{{ next_link }}</li>
+            </ul>
+          </section>
+        </section>
+      </div>
+  </body>
+</html>

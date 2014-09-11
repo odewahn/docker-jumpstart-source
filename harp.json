@@ -1,0 +1,22 @@
+{
+   "globals": {
+      "title": "Docker Jumpstart",
+      "github_user": "odewahn",
+      "github_url": "https://github.com/odewahn/docker-jumpstart",
+      "github_repo": "docker-jumpstart",
+      "twitter_user": "odewahn",
+      "files": [
+         "content/coverpage.html",
+         "content/toc.md",
+         "content/introduction.md",
+         "content/boot2docker.md",
+         "content/images.md",
+         "content/containers.md",
+         "content/example.md",
+         "content/building-images-with-dockerfiles.md",
+         "content/dockerhub.md",
+         "content/additional-resources.md"
+      ]
+   }
+
+}
