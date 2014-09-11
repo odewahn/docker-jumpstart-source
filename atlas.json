@@ -1,6 +1,8 @@
 {
   "branch": "master",
   "files": [
+    "print-only/coverpage.html",
+    "print-only/toc.md",
     "public/introduction.md",
     "public/boot2docker.md",
     "public/images.md",
