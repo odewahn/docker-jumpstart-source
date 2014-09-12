@@ -10,7 +10,9 @@ a {
   text-decoration: none;
 }
 
-
+.row {
+	margin-top: 20px;
+}
 
 
 /* Header
@@ -57,42 +59,10 @@ header a {
 	width: 70%;
 }
 
-/* Footer
----------------------------------------------------- */
-footer {
-   position: relative;
-   border-top: 1px solid #E0E0E0;
-   padding: 20px;
-}
-
-.logo {
-	margin-left: 80px;
-	margin-right: 40px;
-	margin-bottom: 20px;
-	width: 120px;
-	float: left;
-}
 
 
-/* Content
------------------------------------------------------------------ */
 
-#flex-box {
-  display: flex;
-  flex: 1 100%;
-}
-
-#flex-box #sidebar {
-  flex: 0 0 250px;
-  border-right: 1px solid #E0E0E0;
-}
-
-#flex-box #content {
-  flex: 1;
-}
-
-
-/* turn sidebar off by default
+/* Sidebar
 ----------------------------------------------------------------- */
 #sidebar {
    display: none;
@@ -106,6 +76,7 @@ footer {
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
+
 
 /* index.html specific elements
 ----------------------------------------------------------------- */
@@ -154,6 +125,20 @@ blockquote cite {
 /* Content
 ----------------------------------------------------------------- */
 
+#flex-box {
+  display: flex;
+  flex: 1 100%;
+}
+
+#flex-box #sidebar {
+  flex: 0 0 250px;
+  border-right: 1px solid #E0E0E0;
+}
+
+#flex-box #content {
+  flex: 1;
+}
+
 #content-body {
   width: 750px;
   margin: 0 auto;
@@ -179,6 +164,24 @@ blockquote cite {
 #content-body img {
 	width: 100%;
 }
+
+
+/* Footer
+---------------------------------------------------- */
+footer {
+   position: relative;
+   border-top: 1px solid #E0E0E0;
+   padding: 20px;
+}
+
+.logo {
+	margin-left: 80px;
+	margin-right: 40px;
+	margin-bottom: 20px;
+	width: 120px;
+	float: left;
+}
+
 
 
 
