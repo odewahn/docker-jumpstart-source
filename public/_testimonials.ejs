@@ -1,11 +1,9 @@
-here are some nice words...
-
-<% console.log(public._data); %>
-
-<% for (var c in public._data) { %>
-   ewfwert
-   <div class="toc-element clearfix">
-      <%= c %>
+<% public._data["testimonials"].forEach(function(c) { %>
+   <div class="testimonial clearfix">
+      <img style="width: 120px;" class="testimonial-img" src="<%= c["image"] %>"/>
+      <blockquote class="quote">
+         <%= c["testimonial"] %>
+         <cite class="clearfix source"><%= c["name"] %></cite>
+      </blockquote>    
    </div>
-
-<% }; %>
+<% }); %>

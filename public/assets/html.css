@@ -37,7 +37,11 @@ header #buttons a {
 header h1 {
   font-weight: 300;
   font-size: 20px;
-  color: gray;
+
+}
+
+header a {
+  color: gray;	
 }
 
 .fork-on-github {
@@ -103,38 +107,6 @@ footer {
 	margin-bottom: 20px;
 }
 
-
-/* Content
------------------------------------------------------------------ */
-
-#content-body {
-  width: 750px;
-  margin: 0 auto;
-}
-
-#content-body h1 {
-  font-size: 35px;
-  margin-bottom: 0.8em;
-}
-
-#content-body p {
-  line-height: 1.6em;
-}
-
-#content-body pre {
-  background-color: #F5F5F5;
-  border: 1px solid #CCC;
-  border-radius: 5px;
-  padding: 10px;
-  white-space: pre-wrap;
-}
-
-#content-body img {
-	width: 100%;
-}
-
-
-
 /* index.html specific elements
 ----------------------------------------------------------------- */
 
@@ -144,7 +116,7 @@ footer {
   margin-right: 20px;
 }
 
-.author-img {
+.testimonial-img {
   border-radius: 12px;
   margin-bottom: 10px;
   width: 120px;
@@ -177,5 +149,39 @@ blockquote cite {
    padding: 10px;
    width: 90%;
 }
+
+
+/* Content
+----------------------------------------------------------------- */
+
+#content-body {
+  width: 750px;
+  margin: 0 auto;
+}
+
+#content-body h1 {
+  font-size: 35px;
+  margin-bottom: 0.8em;
+}
+
+#content-body p {
+  line-height: 1.6em;
+}
+
+#content-body pre {
+  background-color: #F5F5F5;
+  border: 1px solid #CCC;
+  border-radius: 5px;
+  padding: 10px;
+  white-space: pre-wrap;
+}
+
+#content-body img {
+	width: 100%;
+}
+
+
+
+
 
 

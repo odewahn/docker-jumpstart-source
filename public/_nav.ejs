@@ -10,11 +10,11 @@
                //the element is not found at all
                break;
             case 0: 
-               // first page, so don't show a previous page
+               // on the first page, so there is no previous link
                retVal["next"] = contents[idx+1];
                break;
             case (contents.length -1): 
-               // last page, so don't show a next page
+               // on the last page, so there is no next page
                retVal["prev"] = contents[idx-1];
                break;
             default:
