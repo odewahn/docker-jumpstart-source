@@ -2,49 +2,40 @@
    "globals": {
       "title": "Docker Jumpstart",
       "author": "Andrew Odewahn",
-      "contents": [
-         {
+      "contents": {
+         "introduction": {
             "title" : "Introduction",
-            "filename": "introduction.html",
             "icon": "fa-th"
          },
-         {
+         "boot2docker": {
             "title" : "Using boot2docker to run Docker on a Mac or Windows",
-            "filename": "boot2docker.html",
             "icon": "fa-laptop"
- 
          },
-         {
+         "images": {
             "title" : "Images: Layered filesystems",
-            "filename": "images.html",
             "icon": "fa-align-justify"
          },
-         {
+         "containers": {
             "title" : "Containers: Running instances of an Image",
-            "filename": "containers.html",
             "icon": "fa-bolt"
          },
-         {
+         "example": {
             "title" : "Creating your own Docker Image",
-            "filename": "example.html",
             "icon": "fa-gears"
          },
-         {
+         "building-images-with-dockerfiles": {
             "title" : "Building images with Dockerfiles",
-            "filename": "building-images-with-dockerfiles.html",
             "icon": "fa-file-text-o"
          },
-         {
+         "dockerhub": {
             "title" : "Sharing images on Docker Hub",
-            "filename": "dockerhub.html",
             "icon": "fa-cloud-upload"
          },
-         {
+         "additional-resources": {
             "title" : "Additional Resources",
-            "filename": "additional-resources.html",
             "icon": "fa-book"
          }
-      ]
+      }
    }
 
 }
