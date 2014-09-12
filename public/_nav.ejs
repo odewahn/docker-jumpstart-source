@@ -30,19 +30,21 @@
    var navLinks = getNavLinks(contents, current.source);
 %>
 
+<div class="nav-buttons">
 <ul class="nav nav-pills">
    <% if (navLinks["prev"]) { %>
       <li>
-         <a href="<%= navLinks["prev"] %>"> 
+         <a href="<%= navLinks["prev"] %>.html" title="<%= contents[navLinks["prev"]]["title"] %>"> 
             <span class="glyphicon glyphicon-chevron-left"/> Previous
          </a>
       </li>
    <% } %>
    <% if (navLinks["next"]) { %>
       <li>
-         <a href="<%= navLinks["next"] %>">
+         <a href="<%= navLinks["next"] %>.html" title="<%= contents[navLinks["next"]]["title"] %>"> 
             Next <span class="glyphicon glyphicon-chevron-right"/>
          </a>
       </li>
    <% } %>
 </ul>
+</div>

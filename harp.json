@@ -11,7 +11,7 @@
             "title" : "Using boot2docker to run Docker on a Mac or Windows",
             "icon": "fa-laptop"
          },
-         "images": {
+         "docker-images": {
             "title" : "Images: Layered filesystems",
             "icon": "fa-align-justify"
          },

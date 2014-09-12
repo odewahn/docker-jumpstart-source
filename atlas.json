@@ -5,7 +5,7 @@
     "print-only/toc.md",
     "public/introduction.md",
     "public/boot2docker.md",
-    "public/images.md",
+    "public/docker-images.md",
     "public/containers.md",
     "public/building-images-with-dockerfiles.md",
     "public/example.md",
