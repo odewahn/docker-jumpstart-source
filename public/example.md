@@ -103,7 +103,7 @@ Let's get our code installed.  First, fire up a new container:
 
 
 ```console
-$ docker run -it -p 5000:5000 simple_flask /bin/bash
+$ docker run -it -p 5000:5000 -w /home simple_flask /bin/bash
 ```
 
 As before, we'll use the "-it" options to make it interactive, but we're now adding a couple of new settings:
